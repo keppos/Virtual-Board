@@ -4,7 +4,9 @@ Projektet går ut på att skapa en virtuell whiteboard som man kan använda för
 
 Det finns massvis med kommersiella lösningar (kolla in Padlet, Jamboard, Miro, Mural etc för att hämta inspiration) men nu har vi chansen att skapa en egen app som funkar som vi vill och inte gnäller om betalning och annat!
 
-Ett enkelt exempel kunde se ut ungefär så här: <img src="/assets/images/uppgift.png" width="300">
+Ett enkelt exempel kunde se ut ungefär så här: 
+
+<img src="/assets/images/uppgift.png" width="300">
 
 ## Del 1 – API för inloggning och användaruppgifter (10p)
 
