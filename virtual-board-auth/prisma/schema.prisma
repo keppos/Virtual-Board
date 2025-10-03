@@ -1,0 +1,19 @@
+// Prisma Schema - Virtual Board Auth API (Del 1)
+// Detta definierar databasstrukturen för användarautentisering
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL") // Hämtas från .env fil
+}
+
+// User model - Representerar en användare i systemet
+model User {
+  id        Int      @id @default(autoincrement()) // Primärnyckel, auto-increment
+  username  String   @unique                       // Användarnamn, måste vara unikt
+  password  String                                 // bcrypt-hashat lösenord (10 rounds)
+  createdAt DateTime @default(now())               // Tidsstämpel när användaren skapades
+}
